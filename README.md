@@ -1,1 +1,1 @@
-# terrascan-okteto-get-started
+# Get Started with Terrascan and Okteto
