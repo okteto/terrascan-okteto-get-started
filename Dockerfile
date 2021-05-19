@@ -1,6 +1,5 @@
 FROM okteto/golang:1 as dev
 RUN curl -SL https://github.com/accurics/terrascan/releases/download/v1.6.0/terrascan_1.6.0_Linux_x86_64.tar.gz  | tar -xz -C /usr/local/bin
-
 WORKDIR /usr/src/app
 COPY go.mod go.sum ./
 RUN go mod download

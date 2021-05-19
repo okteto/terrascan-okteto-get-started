@@ -3,6 +3,7 @@ autocreate: true
 image: 
   name: okteto/terrascan-okteto-get-started
   context: devenv
+  target: dev
 command: bash
 securityContext:
   capabilities:
