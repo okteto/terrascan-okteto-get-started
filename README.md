@@ -1,0 +1,1 @@
+# terrascan-okteto-get-started
