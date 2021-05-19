@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: guestbook
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: guestbook
+  template:
+    metadata:
+      labels:
+        app: guestbook
+    spec:
+      containers:
+      - image: okteto/guestbook:golang
+        name: guestbook
+        env:
+          - name: REDIS_HOST
+            value: redis
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: guestbook
+spec:
+  type: LoadBalancer  
+  ports:
+  - name: guestbook
+    port: 8080
+  selector:
+    app: guestbook

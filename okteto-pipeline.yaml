@@ -1,0 +1,4 @@
+deploy:
+- okteto build -t okteto.dev/go-guestbook:$OKTETO_GIT_COMMIT
+- cd manifests; kustomize edit set image okteto/guestbook:golang=okteto.dev/go-guestbook:$OKTETO_GIT_COMMIT
+- kubectl apply -k manifests

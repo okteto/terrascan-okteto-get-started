@@ -1,0 +1,18 @@
+name: terrascan-okteto-get-started
+autocreate: true
+image: 
+  name: okteto/terrascan-okteto-get-started
+  context: devenv
+command: bash
+securityContext:
+  capabilities:
+    add:
+    - SYS_PTRACE
+volumes:
+- /go/pkg/
+- /root/.cache/go-build/
+sync:
+- .:/usr/src/app
+forward:
+- 2345:2345
+- 8080:8080
