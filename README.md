@@ -1,6 +1,6 @@
 # Get Started with Terrascan and Okteto
 
-[![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=terrascan-okteto-get-started)
+[![Develop on Okteto](https://okteto.com/develop-okteto.svg)](https://cloud.okteto.com/deploy?repository=https://github.com/okteto/terrascan-okteto-get-started)
 
 
 This example shows how to build a simple multi-tier web application using Kubernetes and Okteto, and how to leverage terrascan to validate your policies directly in your development environment.
