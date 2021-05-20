@@ -31,4 +31,21 @@ spec:
     spec:
       containers:
       - name: redis
-        image: redis:6
+        image: bitnami/redis:latest
+        volumeMounts:
+          - name: redis-data
+            mountPath: /data
+        env:
+        - name: ALLOW_EMPTY_PASSWORD
+          value: "yes"
+  volumeClaimTemplates:
+  - apiVersion: v1
+    kind: PersistentVolumeClaim
+    metadata:
+      name: redis-data
+    spec:
+      accessModes: [ "ReadWriteOnce" ]
+      volumeMode: Filesystem
+      resources:
+        requests:
+          storage: 1Gi
