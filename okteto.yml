@@ -1,5 +1,4 @@
-name: terrascan-okteto-get-started
-autocreate: true
+name: guestbook
 image: 
   name: okteto/terrascan-okteto-get-started
   context: devenv

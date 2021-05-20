@@ -1,0 +1,5 @@
+manifests
+README.md
+okteto.yaml
+okteto-pipeline.yaml
+.stignore
