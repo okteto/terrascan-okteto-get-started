@@ -38,6 +38,7 @@ spec:
         securityContext:
           runAsNonRoot: true
           allowPrivilegeEscalation: false
+          runAsUser: 1001
         resources:
           requests:
             cpu: 0.5
