@@ -31,7 +31,17 @@ spec:
     spec:
       containers:
       - name: redis
-        image: redis:latest
+        image: redis:6.2.3
         env:
         - name: ALLOW_EMPTY_PASSWORD
           value: "yes"
+        securityContext:
+          runAsNonRoot: true
+          allowPrivilegeEscalation: false
+        resources:
+          requests:
+            cpu: 0.5
+            memory: 64Mi
+          limits:
+            cpu: 1.0
+            memory: 512Mi
