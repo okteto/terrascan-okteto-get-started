@@ -10,5 +10,6 @@ This demo is part of the talk "Bringing DevSecOps into your development environm
 > Sample based on https://github.com/kubernetes/examples/tree/master/guestbook-go
 
 
+## Shows us your love!
 
-if you like terrascan project https://github.com/accurics/terrascan ! give a git star! 
+Do you liked the demo? Check out [Okteto](https://github.com/okteto/okteto) and [Terrascan](https://github.com/accurics/terrascan) and give us a star.
