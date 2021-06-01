@@ -8,3 +8,8 @@ This example shows how to build a simple multi-tier web application using Kubern
 This demo is part of the talk "Bringing DevSecOps into your development environments with Okteto" presented on [DevSecOps Conf 2021](https://devsecopsconf.kubedaily.com/).
 
 > Sample based on https://github.com/kubernetes/examples/tree/master/guestbook-go
+
+
+## Shows us your love!
+
+Do you liked the demo? Check out [Okteto](https://github.com/okteto/okteto) and [Terrascan](https://github.com/accurics/terrascan) and give us a star.
