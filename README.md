@@ -12,4 +12,4 @@ This demo is part of the talk "Bringing DevSecOps into your development environm
 
 ## Shows us your love!
 
-Do you liked the demo? Check out [Okteto](https://github.com/okteto/okteto) and [Terrascan](https://github.com/accurics/terrascan) and give us a star.
+Do you liked the demo? Check out [Okteto](https://github.com/okteto/okteto) and [Terrascan](https://github.com/tenable/terrascan) and give us a star.
